@@ -10,15 +10,15 @@ import '../../styles/main.scss'
 function LogementDetails (){
     const { id } = useParams()
     const logement = logementsList.find(logement => logement.id === id)
-
+    
+    if (!logement) {
+        return <Error />;
+    }
     const eqpt = logement.equipments.map((item, index) => (
         <li key={index} className='eqpt-item'>{item}
         </li>
     ))
 
-    if (!logement) {
-        return <Error />;
-      }
 
     return (
         <section>
