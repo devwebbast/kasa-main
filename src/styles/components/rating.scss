@@ -1,0 +1,15 @@
+.rating {
+    font-size: 32px;
+    margin-top: 5px;
+    
+    .star {
+        margin-right: 15px;
+    }
+    .filled-stars{
+        color: #FF6060;
+    }
+    
+    .empty-stars{
+        color: #E3E3E3;
+    }
+}
