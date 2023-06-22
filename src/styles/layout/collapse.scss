@@ -7,6 +7,7 @@
     .collapse {
         width: 100%;
         
+        
 
         .title-item {
             display: flex;
@@ -16,6 +17,9 @@
             color: white;
             padding: 0 10px;
             border-radius: 10px;
+            height: 52px;
+            
+    
 
             .chevrons {
                 font-size: 2vw;
@@ -51,11 +55,12 @@
         margin-right: auto;
 
         .collapse .title-item h2 {
-            font-size: 2vw;
+            font-size: 1.5rem;
+            font-weight: 500;
         }
 
         .collapse .title-item .chevrons {
-            font-size: 3.5vw;
+            font-size: 2vw;
         }
     }
 
