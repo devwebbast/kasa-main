@@ -20,3 +20,39 @@
         }
     }
 }
+
+@media screen and (min-width: 562px) and (max-width: 776px){
+
+
+    .tag-container .tag-content-list {
+        
+        padding: 1px;
+        
+        .tag-list{
+            width: 150px;
+        }
+    }
+}
+
+@media screen and (max-width: 561px) {
+    .tag-container {
+        gap: 5px;
+        flex-wrap: wrap;
+        height: 50px;
+        
+        .tag-content-list {
+            display: flex;
+            background: #FF6060;
+            height: 18px;
+            width: 100px;
+            border-radius: 10px;
+            padding: 2px;
+            align-items: center;
+            
+            .tag-list{
+                font-size: 11px;
+            }
+    
+        }
+    }
+}

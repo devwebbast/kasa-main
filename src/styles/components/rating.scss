@@ -13,3 +13,21 @@
         color: #E3E3E3;
     }
 }
+
+@media screen and (min-width: 777px) {
+    .rating{
+        font-size: 32px;
+
+        .star {
+            margin: 0;
+        }
+    }
+
+}
+
+@media screen and (min-width: 562px) and (max-width: 776px){
+    .rating .star {
+        margin-right: 0;
+        
+    }
+}

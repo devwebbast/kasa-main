@@ -1,8 +1,7 @@
 import React from 'react'
 import { useState } from "react"
-import { Icon } from 'react-icons-kit'
-import {chevronUp} from 'react-icons-kit/feather/chevronUp'
-import {chevronDown} from 'react-icons-kit/feather/chevronDown'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faChevronUp, faChevronDown} from '@fortawesome/free-solid-svg-icons'
 
 function AboutItems ({title, content}){
     const [isToggled, setIsToggle] = useState(false)
@@ -12,21 +11,21 @@ function AboutItems ({title, content}){
     }
 
     return(
-        <div>
-        <div className="title-item" onClick={() => toggleItem()}>
-            <h2>{title}</h2>
-            {isToggled ? (
-               <Icon className='chevrons' icon={chevronUp} size={30}  />
-                ) : (
-                <Icon className='chevrons' icon={chevronDown} size={30} />
+        <div className='collapse'>
+            <div className="title-item" onClick={() => toggleItem()}>
+                <h2>{title}</h2>
+                {isToggled ? (
+                    <FontAwesomeIcon className='chevrons' icon={faChevronUp} />
+                    ) : (
+                    <FontAwesomeIcon className='chevrons chevrons-style' icon={faChevronDown} />
+                    )}
+            </div>
+                {isToggled && (
+                    <div className="content-item" >
+                        <p>{content}</p>
+                    </div>
                 )}
-    </div>
-    {isToggled && (
-        <div className="content-item" >
-            <p>{content}</p>
         </div>
-    )}
-    </div>
     )
 }
 

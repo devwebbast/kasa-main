@@ -22,9 +22,7 @@ function LogementDetails (){
 
     return (
         <section>
-            <div>
             <Carousel slides={logement.pictures}/>
-            </div>
             <div className='head-container'>
                 <div className='content-left'>
                     <h2>{logement.title}</h2>
@@ -45,7 +43,7 @@ function LogementDetails (){
                     </div>
                 </div> 
             </div>
-            <div className="collapse">
+            <div className="collapse-container">
                 <AboutItems className="collapse-description" title="Description" content={logement.description} />
                 <AboutItems className="collapse-equipments" title="Equipements" content={eqpt} />
             </div>
